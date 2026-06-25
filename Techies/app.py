@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 from datetime import datetime, timedelta
 from functools import wraps
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="Templates")
 app.secret_key = 'smartbudget_secret_2024'
 DB = os.path.join(os.path.dirname(__file__), 'budget.db')
 
