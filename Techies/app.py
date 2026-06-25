@@ -60,6 +60,7 @@ def init_db():
             FOREIGN KEY(category_id) REFERENCES categories(id) ON DELETE CASCADE
         );
         """)
+init_db()
 
 # ─── DECORATORS ──────────────────────────────────────────
 def login_required(f):
